@@ -110,7 +110,7 @@ body {
 }
 
 .photo-container img {
-    width: 100px;  /* Adjust as needed */
+    width: 20px;  /* Adjust as needed */
     height: auto;  /* Maintains aspect ratio */
     object-fit: cover; /* Prevents distortion */
     border-radius: 10px; /* Optional: adds rounded corners */
