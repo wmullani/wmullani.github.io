@@ -109,13 +109,19 @@ body {
   margin: 0 auto; /* Centers the container on the page */
 }
 
+.photo-container {
+    width: 300px;  /* Adjust as needed */
+    height: auto;  /* Keeps proportions */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .photo-container img {
-    width: 400px;  /* Adjust as needed */
-    height: auto;  /* Maintains aspect ratio */
-    object-fit: cover; /* Prevents distortion */
-    border-radius: 10px; /* Optional: adds rounded corners */
-    display: block; /* Ensures proper spacing */
-    margin: 0 auto; /* Centers the image within its container */
+    width: 100%;  /* Ensures it fills the container */
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;  /* Optional for rounded corners */
 }
 
 /* Bio Text */
