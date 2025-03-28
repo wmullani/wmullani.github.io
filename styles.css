@@ -63,7 +63,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    margin-top: 50px; /* Prevents header from being hidden behind the fixed nav */
+    margin-top: 30px; /* Prevents header from being hidden behind the fixed nav */
 }
 
 header h1 {
