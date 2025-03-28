@@ -147,7 +147,7 @@ footer a {
 
   /* Skills Banner Section */
 .skills-banner {
-    background-color: #2a6f97;  /* Choose a color for the banner */
+    background-color: white;  /* Choose a color for the banner */
     padding: 20px 0;  /* Adjust the padding as needed */
     text-align: center;
   }
@@ -157,7 +157,7 @@ footer a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;  /* Allow the icons to wrap if necessary */
-    gap: 20px;  /* Space between icons */
+    gap: 40px;  /* Space between icons */
   }
   
   .skill-icon {
@@ -167,5 +167,5 @@ footer a {
   }
   
   .skill-icon:hover {
-    transform: scale(1.1);  /* Slightly increase the size of icons when hovered */
+    transform: scale(1.2);  /* Slightly increase the size of icons when hovered */
   }  
