@@ -1,0 +1,171 @@
+/* Define Color Palette */
+:root {
+    --prussian-blue: #012a4aff;
+    --indigo-dye: #013a63ff;
+    --indigo-dye-2: #01497cff;
+    --indigo-dye-3: #014f86ff;
+    --ucla-blue: #2a6f97ff;
+    --cerulean: #2c7da0ff;
+    --air-force-blue: #468fafff;
+    --air-superiority-blue: #61a5c2ff;
+    --sky-blue: #89c2d9ff;
+    --light-blue: #a9d6e5ff;
+
+    /* Gradient Definitions */
+    --gradient-top: linear-gradient(0deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
+    --gradient-right: linear-gradient(90deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
+    --gradient-bottom: linear-gradient(180deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
+    --gradient-left: linear-gradient(270deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
+    --gradient-top-right: linear-gradient(45deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
+    --gradient-bottom-right: linear-gradient(135deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
+    --gradient-top-left: linear-gradient(225deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
+    --gradient-bottom-left: linear-gradient(315deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
+    --gradient-radial: radial-gradient(#012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
+}
+
+/* General styling for the pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-blue);
+    color: var(--prussian-blue);
+    padding-bottom: 60px; /* Ensures footer doesn't overlap content */
+}
+
+nav {
+    background-color: var(--indigo-dye);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; /* Keeps the nav above other content */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--ucla-blue);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px; /* Prevents header from being hidden behind the fixed nav */
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+section#bio {
+    background-color: white;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--indigo-dye);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 100; /* Keeps the footer above other content */
+}
+
+/* Additional space to ensure the footer is not overlapped */
+body {
+    padding-bottom: 60px;
+}
+
+/* Bio Container */
+.bio-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  padding: 40px 10%; /* Adds space on the sides */
+  max-width: 1200px; /* Limits the width of the whole bio section */
+  margin: 0 auto; /* Centers the container on the page */
+}
+
+/* Bio Text */
+.bio-text {
+  flex: 1; /* Makes the bio text take up more space */
+  max-width: 500px; /* Limits the width of the bio text box */
+  text-align: left; /* Aligns the bio text to the left */
+}
+
+/* Bio Photo */
+.bio-photo {
+  flex: 1;
+}
+
+/* About Me Header */
+.bio-text h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Bio Photo */
+.bio-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer link styling */
+footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }  
+
+  /* Skills Banner Section */
+.skills-banner {
+    background-color: #2a6f97;  /* Choose a color for the banner */
+    padding: 20px 0;  /* Adjust the padding as needed */
+    text-align: center;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  /* Allow the icons to wrap if necessary */
+    gap: 20px;  /* Space between icons */
+  }
+  
+  .skill-icon {
+    width: 50px;  /* Adjust the size of the icons */
+    height: 50px;  /* Adjust the size of the icons */
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-icon:hover {
+    transform: scale(1.1);  /* Slightly increase the size of icons when hovered */
+  }  
