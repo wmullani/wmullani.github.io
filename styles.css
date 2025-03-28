@@ -109,6 +109,15 @@ body {
   margin: 0 auto; /* Centers the container on the page */
 }
 
+.photo-container img {
+    width: 200px;  /* Adjust as needed */
+    height: auto;  /* Maintains aspect ratio */
+    object-fit: cover; /* Prevents distortion */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    display: block; /* Ensures proper spacing */
+    margin: 0 auto; /* Centers the image within its container */
+}
+
 /* Bio Text */
 .bio-text {
   flex: 1; /* Makes the bio text take up more space */
