@@ -159,7 +159,7 @@ footer a {
     padding: 20px 0;  /* Adjust the padding as needed */
     text-align: center;
     padding-bottom: 50px;  /* Adds space between the skills banner and the footer */
-    min-height: 100px; /* Ensures it's tall enough */
+    min-height: 50px; /* Ensures it's tall enough */
   }
   
   .skills-container {
