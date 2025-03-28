@@ -110,7 +110,7 @@ body {
 }
 
 .photo-container img {
-    width: 100px;  /* Adjust as needed */
+    width: 400px;  /* Adjust as needed */
     height: auto;  /* Maintains aspect ratio */
     object-fit: cover; /* Prevents distortion */
     border-radius: 10px; /* Optional: adds rounded corners */
@@ -136,13 +136,6 @@ body {
   text-align: center;
   width: 100%;
 }
-
-/* Bio Photo /
-.bio-photo img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}*/
 
 /* Footer link styling */
 footer a {
