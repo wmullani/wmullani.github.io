@@ -149,3 +149,12 @@ footer {
 .skill-icon:hover {
     transform: scale(1.2);
 }
+
+#contact a {
+  color: var(--indigo-dye);
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
