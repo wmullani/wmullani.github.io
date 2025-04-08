@@ -126,7 +126,7 @@ footer {
 .skills-banner {
   background-color: white !important;  /* override Bootstrap bg-light */
   padding-top: 40px;
-  padding-bottom: 250px;  /* give plenty of room above the footer */
+  padding-bottom: 300px;  /* give plenty of room above the footer */
   text-align: center;
   position: relative; /* ensures spacing stacks properly */
   z-index: 1;
