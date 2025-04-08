@@ -1,3 +1,10 @@
+/* General Reset for Consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Define Color Palette */
 :root {
     --prussian-blue: #012a4aff;
@@ -10,46 +17,29 @@
     --air-superiority-blue: #61a5c2ff;
     --sky-blue: #89c2d9ff;
     --light-blue: #a9d6e5ff;
-
-    /* Gradient Definitions */
-    --gradient-top: linear-gradient(0deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
-    --gradient-right: linear-gradient(90deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
-    --gradient-bottom: linear-gradient(180deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
-    --gradient-left: linear-gradient(270deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
-    --gradient-top-right: linear-gradient(45deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
-    --gradient-bottom-right: linear-gradient(135deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
-    --gradient-top-left: linear-gradient(225deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
-    --gradient-bottom-left: linear-gradient(315deg, #012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
-    --gradient-radial: radial-gradient(#012a4aff, #013a63ff, #01497cff, #014f86ff, #2a6f97ff, #2c7da0ff, #468fafff, #61a5c2ff, #89c2d9ff, #a9d6e5ff);
 }
 
-/* General styling for the pages */
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: var(--light-blue);
     color: var(--prussian-blue);
     padding-bottom: 60px; /* Ensures footer doesn't overlap content */
+    padding-top: 80px; /* Adds space for fixed navbar */
 }
 
+/* Navbar Styling with Bootstrap Overrides */
 nav {
     background-color: var(--indigo-dye);
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100; /* Keeps the nav above other content */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
 
@@ -58,20 +48,21 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Header Section */
 header {
     background-color: var(--ucla-blue);
     color: white;
     padding: 20px;
     text-align: center;
-    margin-top: 30px; /* Prevents header from being hidden behind the fixed nav */
 }
 
-header h1 {
-    margin: 0;
-}
-
+/* Section Styling */
 section {
-    padding: 20px;
+    padding: 40px 15px;  /* Add padding for spacing */
 }
 
 section#bio {
@@ -81,6 +72,7 @@ section#bio {
     border-radius: 8px;
 }
 
+/* Footer Styling */
 footer {
     background-color: var(--indigo-dye);
     color: white;
@@ -89,92 +81,54 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    z-index: 100; /* Keeps the footer above other content */
 }
 
-/* Additional space to ensure the footer is not overlapped */
-body {
-    padding-bottom: 60px;
-}
-
-/* Bio Container */
+/* Bio Section */
 .bio-container {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
-  gap: 120px;
-  padding: 40px 10%; /* Adds space on the sides */
-  max-width: 1200px; /* Limits the width of the whole bio section */
-  margin: 0 auto; /* Centers the container on the page */
+  gap: 30px;  /* Adjust gap for Bootstrap's responsiveness */
+  padding: 40px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.photo-container {
-    width: 300px;  /* Adjust as needed */
-    height: auto;  /* Keeps proportions */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.photo-container img {
-    width: 100%;  /* Ensures it fills the container */
+.bio-photo img {
+    width: 100%;
     height: auto;
     object-fit: contain;
-    border-radius: 10px;  /* Optional for rounded corners */
+    border-radius: 10px;
 }
 
-/* Bio Text */
 .bio-text {
-  flex: 1; /* Makes the bio text take up more space */
-  max-width: 500px; /* Limits the width of the bio text box */
-  text-align: left; /* Aligns the bio text to the left */
-}
-
-/* Bio Photo */
-.bio-photo {
   flex: 1;
+  max-width: 500px;
+  text-align: left;
 }
 
-/* About Me Header */
-.bio-text h2 {
-  margin-bottom: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-/* Footer link styling */
-footer a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }  
-
-  /* Skills Banner Section */
+/* Skills Section */
 .skills-banner {
-    background-color: white;  /* Choose a color for the banner */
-    padding: 20px 0;  /* Adjust the padding as needed */
+    background-color: white;
+    padding: 40px 0;
     text-align: center;
-    padding-bottom: 60px;  /* Adds space between the skills banner and the footer */
-  }
-  
-  .skills-container {
+}
+
+.skills-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;  /* Allow the icons to wrap if necessary */
-    gap: 40px;  /* Space between icons */
-  }
-  
-  .skill-icon {
-    width: 50px;  /* Adjust the size of the icons */
-    height: 50px;  /* Adjust the size of the icons */
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
     transition: transform 0.3s ease;
-  }
-  
-  .skill-icon:hover {
-    transform: scale(1.2);  /* Slightly increase the size of icons when hovered */
-  }  
+}
+
+.skill-icon:hover {
+    transform: scale(1.2);
+}
