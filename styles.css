@@ -96,10 +96,11 @@ footer {
 }
 
 .bio-photo img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 10px;
+  width: 100%;
+  max-width: 66%;  /* Adjust the value to control the max size */
+  height: auto;
+  margin: 0 auto;  /* Center the image */
+  display: block;  /* Ensure it's displayed as a block element */
 }
 
 .bio-text {
