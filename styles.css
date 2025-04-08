@@ -11,7 +11,7 @@
     --indigo-dye: #013a63ff;
     --indigo-dye-2: #01497cff;
     --indigo-dye-3: #014f86ff;
-    --ucla-blue: #2a6f97ff;
+    --ucla-blue: #2a6f97;
     --cerulean: #2c7da0ff;
     --air-force-blue: #468fafff;
     --air-superiority-blue: #61a5c2ff;
@@ -19,13 +19,25 @@
     --light-blue: #a9d6e5ff;
 }
 
-/* General Body Styling */
+/* Ensure Full-Height Layout with Flex */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: var(--light-blue);
     color: var(--prussian-blue);
-    padding-bottom: 60px; /* Ensures footer doesn't overlap content */
-    padding-top: 80px; /* Adds space for fixed navbar */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Ensure main fills vertical space between nav and footer */
+main {
+    flex: 1;
 }
 
 /* Navbar Styling with Bootstrap Overrides */
@@ -62,7 +74,7 @@ header {
 
 /* Section Styling */
 section {
-    padding: 40px 15px;  /* Add padding for spacing */
+    padding: 40px 15px;
 }
 
 section#bio {
@@ -81,38 +93,39 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 100;
 }
 
 /* Bio Section */
 .bio-container {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;  /* Adjust gap for Bootstrap's responsiveness */
-  padding: 40px 5%;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .bio-photo {
-  width: 100%;
-  max-width: 66%;
-  height: auto;
-  margin: 0 auto;
-  display: block;
+    width: 100%;
+    max-width: 66%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 .bio-text {
-  flex: 1;
-  max-width: 500px;
-  text-align: left;
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
 }
 
 /* Skills Section */
 .skills-banner {
     background-color: white;
-    padding: 40px 0;
+    padding: 40px 0 60px; /* bottom padding to prevent footer overlap */
     text-align: center;
 }
 
@@ -133,4 +146,3 @@ footer {
 .skill-icon:hover {
     transform: scale(1.2);
 }
-
