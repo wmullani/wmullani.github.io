@@ -125,7 +125,7 @@ footer {
 /* Skills Section */
 .skills-banner {
     background-color: white;
-    padding: 40px 0 60px; /* bottom padding to prevent footer overlap */
+    padding: 40px 0 100px; /* bottom padding to prevent footer overlap */
     text-align: center;
 }
 
