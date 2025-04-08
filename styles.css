@@ -97,7 +97,7 @@ footer {
 
 .bio-photo img {
   width: 100%;
-  max-width: 66%;  /* Adjust the value to control the max size */
+  max-width: 33%;  /* Adjust the value to control the max size */
   height: auto;
   margin: 0 auto;  /* Center the image */
   display: block;  /* Ensure it's displayed as a block element */
