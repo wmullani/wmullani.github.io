@@ -124,9 +124,12 @@ footer {
 
 /* Skills Section */
 .skills-banner {
-    background-color: white;
-    padding: 40px 0 100px; /* bottom padding to prevent footer overlap */
-    text-align: center;
+  background-color: white !important;  /* override Bootstrap bg-light */
+  padding-top: 40px;
+  padding-bottom: 120px;  /* give plenty of room above the footer */
+  text-align: center;
+  position: relative; /* ensures spacing stacks properly */
+  z-index: 1;
 }
 
 .skills-container {
