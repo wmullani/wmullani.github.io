@@ -95,12 +95,12 @@ footer {
   margin: 0 auto;
 }
 
-.bio-photo img {
+.bio-photo {
   width: 100%;
-  max-width: 33%;  /* Adjust the value to control the max size */
+  max-width: 66%;
   height: auto;
-  margin: 0 auto;  /* Center the image */
-  display: block;  /* Ensure it's displayed as a block element */
+  margin: 0 auto;
+  display: block;
 }
 
 .bio-text {
@@ -133,3 +133,4 @@ footer {
 .skill-icon:hover {
     transform: scale(1.2);
 }
+
