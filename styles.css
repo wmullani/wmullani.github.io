@@ -203,16 +203,26 @@ footer {
     }
 }
 
-.contact-info {
+#contact-resume .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; /* similar to Bootstrap's gap-4 */
+  }
+  
+  .contact-info,
+  .resume-preview {
     flex: 1;
     min-width: 300px;
+  }
+  
+  .contact-info {
     max-width: 500px;
   }
   
   .resume-preview {
-    flex: 1;
-    min-width: 300px;
     max-width: 600px;
+    text-align: center;
   }
   
   .resume-image {
