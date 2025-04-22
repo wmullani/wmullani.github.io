@@ -202,3 +202,23 @@ footer {
         text-align: left;
     }
 }
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+  }
+  
+  .resume-preview {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+  }
+  
+  .resume-image {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }  
