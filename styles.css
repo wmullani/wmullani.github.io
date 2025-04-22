@@ -158,3 +158,44 @@ footer {
 #contact a:hover {
   text-decoration: underline;
 }
+
+#projects {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.project-text h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-text {
+        text-align: left;
+    }
+}
