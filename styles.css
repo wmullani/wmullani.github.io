@@ -166,11 +166,13 @@ footer {
 
 .project-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 2rem;
-    gap: 1rem;
-    flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
 }
 
 .project-img {
