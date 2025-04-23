@@ -108,13 +108,19 @@ footer {
     margin: 0 auto;
 }
 
-.bio-photo {
-    width: 100%;
-    max-width: 66%;
+.row.mx-auto.mb-5 {
+    display: flex;
+    align-items: center; /* Vertically align the text and image */
+    justify-content: center; /* Horizontally center the entire row */
+    flex-wrap: wrap; /* Allows responsiveness for smaller screens */
+  }
+  
+  .bio-photo {
+    max-width: 100%;
     height: auto;
-    margin: 0 auto;
-    display: block;
-}
+    border-radius: 10px; /* Optional: smooth corners */
+  }
+  
 
 .bio-text {
     flex: 1;
