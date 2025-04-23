@@ -175,7 +175,7 @@ footer {
   flex-wrap: wrap; /* allows stacking on smaller screens */
 }
 
-.project-img {
+.artifact-img {
   flex: 1 1 40%;
   max-width: 40%;
   height: auto;
