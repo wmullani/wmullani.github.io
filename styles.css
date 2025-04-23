@@ -177,7 +177,7 @@ footer {
 
 .project-content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px; /* space between image and text */
     flex-wrap: wrap; /* stacks vertically on small screens */
   }
