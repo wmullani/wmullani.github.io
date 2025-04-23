@@ -114,13 +114,14 @@ footer {
     justify-content: center; /* Horizontally center the entire row */
     flex-wrap: wrap; /* Allows responsiveness for smaller screens */
   }
-  
-  .bio-photo {
-    max-width: 100%;
+
+.bio-photo {
+    width: 100%;
+    max-width: 66%;
     height: auto;
-    border-radius: 10px; /* Optional: smooth corners */
-  }
-  
+    margin: 0 auto;
+    display: block;
+}
 
 .bio-text {
     flex: 1;
