@@ -183,7 +183,7 @@ footer {
   }
   
   .artifact-img {
-    max-width: 600px; 
+    max-width: 500px; 
     width: 100%;
     height: auto;
     flex-shrink: 0;
@@ -191,7 +191,7 @@ footer {
   
   .project-content p {
     flex: 1;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0;
   }
   
