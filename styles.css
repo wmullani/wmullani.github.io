@@ -169,9 +169,9 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin: 40px auto;
-  padding: 20px;
-  max-width: 1200px;
+  max-width: 900px; /* or whatever width you feel looks good */
+  margin: 0 auto; /* this centers it horizontally */
+  padding: 0 20px; /* optional: adds a little breathing room on smaller screens */
   flex-wrap: wrap; /* allows stacking on smaller screens */
 }
 
