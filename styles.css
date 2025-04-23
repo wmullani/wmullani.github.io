@@ -181,6 +181,11 @@ footer {
     gap: 20px; /* space between image and text */
     flex-wrap: wrap; /* stacks vertically on small screens */
   }
+
+  .project-title {
+    width: 100%;
+    margin-bottom: 10px;
+  }
   
   .artifact-img {
     max-width: 500px; 
