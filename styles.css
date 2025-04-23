@@ -165,7 +165,7 @@ footer {
 }
 
 .project-container {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   gap: 40px;
