@@ -258,6 +258,8 @@ footer {
     transition: transform 0.3s ease;
   }  
 
-  iframe {
-    border: none;
+  .artifact-video {
+    width: 100%;
+    height: 250px; /* adjust this value as needed */
+    flex: 1 1 300px;
   }  
